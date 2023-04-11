@@ -1,0 +1,150 @@
+body {
+    --main-color: #3B94E2;
+}
+
+.icons {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr) );
+    gap: 1.25rem;
+}
+
+.icon {
+    background-color: var(--bs-light);
+    border-radius: .25rem;
+}
+
+.bi {
+    margin: .25rem;
+    font-size: 1.5rem;
+}
+
+.label {
+    font-family: var(--bs-font-monospace);
+}
+
+.label {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    padding: .25rem;
+    font-size: .625rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.body {
+    font-family: 'Akrobat', sans-serif;
+    font-size: 1.2rem;
+    color: #efefef;
+    background-color: black;
+}
+
+.nav-header {
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: black;
+    /*background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);*/
+}
+
+    .nav-header a {
+        transition: ease-in-out color .15s;
+    }
+
+.nav-link {
+
+}
+
+.title {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+    .title::before, .title::after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        width: 100%;
+        height: 2px;
+        background: #D1D1D1;
+    }
+
+    .title::before {
+        margin-left: -100%;
+    }
+
+    .title::after {
+        margin-right: -100%;
+    }
+
+footer {
+    color: #d0d0d0;
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: 0;
+    top: 50px;
+}
+
+    .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 10px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #fff;
+        border-radius: 10px;
+}
+
+.table-match {
+    table-layout: fixed;
+    width: 250px;
+    color: #efefef;
+}
+
+.table-match td, .table-match th {
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+}
+
+    .table-match td .team {
+        width: 110px;
+    }
+
+    .table-match td .score {
+        width: 30px;
+    }
+
+.bg-dark-trasparent {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+.bg-light-trasparent {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.font-gothic {
+    font-family: Century Gothic;
+}
+
+.bg-overlay {
+    /*свойства для bg картинки (url указывается отдельно)*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*позиционирование*/
+/*    min-height: 1020px;*/
+}
+
+.gradient-x {
+    /*наложение градиента*/
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 60%, rgba(0,0,0,1) 100%);
+}
+.gradient-y {
+    /*наложение градиента*/
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(0,0,0,1) 100%);
+}
